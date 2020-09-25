@@ -1,0 +1,5089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1700</width>
+    <height>994</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>1661</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="import_video">
+     <attribute name="title">
+      <string>Import Video</string>
+     </attribute>
+     <widget class="QGroupBox" name="importvideo_box">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>341</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Import Video</string>
+      </property>
+      <widget class="QPushButton" name="open_button">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>110</y>
+         <width>81</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Load...</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="width_text">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>110</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 255, 50);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="height_text">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>150</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 255, 50);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+      </widget>
+      <widget class="QTextBrowser" name="frame_text">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>190</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 255, 50);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>110</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>Width [pixel]</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>150</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>Height [pixel]</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>190</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string># Frames</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="verification_video">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>0</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progress_filter">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>35</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>321</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="median_filter">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>35</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Enable Median Filter</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="param_box">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>341</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Set Parameters</string>
+      </property>
+      <widget class="QLabel" name="verification_param">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>0</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="set_button">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>30</y>
+         <width>81</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Set</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>221</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QLineEdit" name="sampling_freq">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>10</y>
+          <width>61</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>131</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>Sample Freq. [Hz]</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>121</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>Load Freq. [Hz]</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="load_freq">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>40</y>
+          <width>61</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="auto_freq">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>191</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <italic>true</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>Frequency autodetect...</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="ROI_box">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>430</y>
+        <width>341</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>ROI selection</string>
+      </property>
+      <widget class="QPushButton" name="enable_ROI">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>321</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <italic>true</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Enable ROI selection...</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="verification_ROI">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>0</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="crop_box">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>321</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QPushButton" name="accept">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>120</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 255, 0, 100);</string>
+        </property>
+        <property name="text">
+         <string>Save...</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="default">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="y1">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>30</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 0, 255, 50);</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>32</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>X1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="crop_button">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>23</y>
+          <width>81</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Crop...</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>32</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::RightToLeft</enum>
+        </property>
+        <property name="text">
+         <string>Y1</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="x2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>70</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 0, 255, 50);</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="x1">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 0, 255, 50);</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>72</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Y2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>72</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>X2</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="y2">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>70</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(0, 0, 255, 50);</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="resume">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 0, 0, 100);</string>
+        </property>
+        <property name="text">
+         <string>Resume</string>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="lockin_button">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>690</y>
+        <width>341</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Lock-In Analysis</string>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="verification_lockin">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>710</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="stacked_import">
+      <property name="geometry">
+       <rect>
+        <x>359</x>
+        <y>9</y>
+        <width>1281</width>
+        <height>771</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_6">
+       <widget class="MplWidget" name="mpl" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>1271</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>CrossCursor</cursorShape>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="frame_slider">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>680</y>
+          <width>581</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Frame Slider</string>
+        </property>
+        <widget class="QSlider" name="slider_frame">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>411</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="tickPosition">
+          <enum>QSlider::TicksAbove</enum>
+         </property>
+         <property name="tickInterval">
+          <number>100</number>
+         </property>
+        </widget>
+        <widget class="QLCDNumber" name="lcd">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>20</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(149, 149, 149, 200);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="smallDecimalPoint">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_9">
+       <widget class="QPushButton" name="back_import">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>710</y>
+          <width>241</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 0, 0, 100);</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="MplWidget" name="mpl_5" native="true">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>571</width>
+          <height>561</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>CrossCursor</cursorShape>
+        </property>
+       </widget>
+       <widget class="MplWidget" name="mpl_6" native="true">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>-20</y>
+          <width>691</width>
+          <height>721</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>CrossCursor</cursorShape>
+        </property>
+        <widget class="QLCDNumber" name="frame_start">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>50</y>
+           <width>64</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(149, 149, 149, 200);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="digitCount">
+          <number>5</number>
+         </property>
+         <property name="value" stdset="0">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+        <widget class="QLCDNumber" name="frame_end">
+         <property name="geometry">
+          <rect>
+           <x>610</x>
+           <y>50</y>
+           <width>64</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(149, 149, 149, 200);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="value" stdset="0">
+          <double>100.000000000000000</double>
+         </property>
+        </widget>
+        <widget class="QSlider" name="slider_freq">
+         <property name="geometry">
+          <rect>
+           <x>660</x>
+           <y>130</y>
+           <width>22</width>
+           <height>441</height>
+          </rect>
+         </property>
+         <property name="pageStep">
+          <number>1</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="invertedAppearance">
+          <bool>true</bool>
+         </property>
+         <property name="tickPosition">
+          <enum>QSlider::TicksBelow</enum>
+         </property>
+         <property name="tickInterval">
+          <number>50</number>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>571</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Parameters</string>
+        </property>
+        <widget class="QSpinBox" name="min_freq">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>40</y>
+           <width>42</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>1</number>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="max_freq">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>40</y>
+           <width>42</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>45</y>
+           <width>20</width>
+           <height>13</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>to</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_33">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>20</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Frequeny Span [Hz]</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="search_frequency">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>70</y>
+           <width>341</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Analyze...</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_34">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>30</y>
+           <width>141</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Load Frequency [Hz]</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="num_sample">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>40</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>2</number>
+         </property>
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="singleStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_35">
+         <property name="geometry">
+          <rect>
+           <x>270</x>
+           <y>20</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>n°  Sample to Analyze</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="Line" name="line_2">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>20</y>
+           <width>20</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="info_load_2">
+         <property name="geometry">
+          <rect>
+           <x>465</x>
+           <y>60</y>
+           <width>71</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0, 255, 50);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="frame">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="start_frame">
+         <property name="geometry">
+          <rect>
+           <x>210</x>
+           <y>40</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="singleStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_36">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>20</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Starting Frame</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Post Processing</string>
+     </attribute>
+     <widget class="QGroupBox" name="filtering_box">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>341</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Filtering</string>
+      </property>
+      <widget class="QPushButton" name="filterLock">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>240</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 255, 0, 100);</string>
+       </property>
+       <property name="text">
+        <string>Apply...</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>240</y>
+         <width>131</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 0, 0, 100);</string>
+       </property>
+       <property name="text">
+        <string>Resume</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="verification_filter">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>0</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="gaussian_box">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>281</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QComboBox" name="kernel_combobox">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>60</y>
+          <width>61</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>3x3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5x5</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QSpinBox" name="scale_spinbox">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>20</y>
+          <width>61</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>24</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Scale Factor</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>64</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Kernel Size</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QComboBox" name="colormap">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>35</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>magma</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>inferno</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>viridis</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>seismic</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>cool</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Spectral</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>tab20b</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>33</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Change plot colormap</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="enable_filter">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>80</y>
+         <width>191</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Enable Gaussian Filter</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="filter">
+      <property name="geometry">
+       <rect>
+        <x>1140</x>
+        <y>15</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 170, 0, 150);</string>
+      </property>
+      <property name="text">
+       <string>Filter: OFF</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>10</y>
+        <width>651</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLineEdit" name="info_load">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>10</y>
+         <width>50</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0, 255, 50);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="info_sample">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>10</y>
+         <width>50</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0, 255, 50);</string>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>9</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Load Frequency [Hz]</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>9</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sampling Frequency [Hz]</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="km_text">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>10</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0, 255, 50);</string>
+       </property>
+       <property name="text">
+        <string>None</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>10</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Calibration Factor</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="calibration_box">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>320</y>
+        <width>341</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Calibration</string>
+      </property>
+      <widget class="QStackedWidget" name="stacked_calibration">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>191</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>1</number>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="page">
+        <widget class="QComboBox" name="calibration_material">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>191</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>Alluminium - Km = 8.8E-6 [1/MPa]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Epoxy - Km = 6.2E-5 [1/MPa]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Steel - Km = 3.5E-6 [1/MPa]</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Titanium - Km = 3.5E-6 [1/MPa]</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="calibration_alert">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>50</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <italic>true</italic>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_3">
+        <widget class="QLabel" name="label_21">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>27</y>
+           <width>131</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Km [1/MPa]</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="calibration_exp">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>60</y>
+           <width>42</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>-10</number>
+         </property>
+         <property name="maximum">
+          <number>0</number>
+         </property>
+         <property name="value">
+          <number>-6</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_22">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>57</y>
+           <width>31</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>*10^</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="calibration_unit">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>30</y>
+           <width>81</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="decimals">
+          <number>1</number>
+         </property>
+         <property name="singleStep">
+          <double>0.100000000000000</double>
+         </property>
+         <property name="value">
+          <double>6.000000000000000</double>
+         </property>
+        </widget>
+        <zorder>label_22</zorder>
+        <zorder>label_21</zorder>
+        <zorder>calibration_exp</zorder>
+        <zorder>calibration_unit</zorder>
+       </widget>
+       <widget class="QWidget" name="page_2">
+        <widget class="QLineEdit" name="calibration_strain_y">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>20</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_23">
+         <property name="geometry">
+          <rect>
+           <x>-10</x>
+           <y>15</y>
+           <width>131</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Young Modulus [Mpa]</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_24">
+         <property name="geometry">
+          <rect>
+           <x>-10</x>
+           <y>45</y>
+           <width>131</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Poisson Ratio</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>-10</x>
+           <y>75</y>
+           <width>131</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Strain [eps]</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="calibration_strain_p">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>50</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="calibration_strain_s">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>80</y>
+           <width>61</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="gauge_button">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>110</y>
+           <width>181</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Set Gauge Position...</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="verification_calibration">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>0</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="filterLock_2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>60</y>
+         <width>91</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 170, 0, 150);</string>
+       </property>
+       <property name="text">
+        <string>Try...</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="select_calibration">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>General Materials</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Custom Materials</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Strain Gauge</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>-50</x>
+         <y>30</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Type of Calibration</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cal_save">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>60</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 255, 0, 100);</string>
+       </property>
+       <property name="text">
+        <string>Save...</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>90</y>
+         <width>305</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QStackedWidget" name="stacked_post">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>90</y>
+        <width>1301</width>
+        <height>721</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_4">
+       <widget class="MplWidget" name="mpl_2" native="true">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>20</y>
+          <width>1151</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>CrossCursor</cursorShape>
+        </property>
+       </widget>
+       <widget class="QStackedWidget" name="stacked_multi">
+        <property name="geometry">
+         <rect>
+          <x>19</x>
+          <y>10</y>
+          <width>1281</width>
+          <height>691</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_7">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="geometry">
+           <rect>
+            <x>450</x>
+            <y>580</y>
+            <width>481</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="title">
+           <string>Rescale Colormap</string>
+          </property>
+          <widget class="QLineEdit" name="cblim_down">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>28</y>
+             <width>61</width>
+             <height>20</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="cblim_up">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>28</y>
+             <width>61</width>
+             <height>21</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="refresh">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>28</y>
+             <width>81</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(0, 255, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string>Apply...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_39">
+           <property name="geometry">
+            <rect>
+             <x>17</x>
+             <y>31</y>
+             <width>47</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <underline>true</underline>
+            </font>
+           </property>
+           <property name="text">
+            <string>Down limit</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_42">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>31</y>
+             <width>47</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <underline>true</underline>
+            </font>
+           </property>
+           <property name="text">
+            <string>Up limit</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="refresh_resume">
+           <property name="geometry">
+            <rect>
+             <x>380</x>
+             <y>28</y>
+             <width>81</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string>Resume</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line_5">
+           <property name="geometry">
+            <rect>
+             <x>260</x>
+             <y>10</y>
+             <width>20</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_8">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>160</y>
+            <width>381</width>
+            <height>521</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QGroupBox" name="save_box">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>270</y>
+             <width>341</width>
+             <height>181</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>Save Results</string>
+           </property>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="geometry">
+             <rect>
+              <x>250</x>
+              <y>100</y>
+              <width>71</width>
+              <height>61</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(225, 225, 225);</string>
+            </property>
+            <property name="text">
+             <string>Save</string>
+            </property>
+            <property name="default">
+             <bool>true</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="verification_save">
+            <property name="geometry">
+             <rect>
+              <x>320</x>
+              <y>0</y>
+              <width>20</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>100</y>
+              <width>221</width>
+              <height>61</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(240, 240, 240);</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QCheckBox" name="plot_format">
+             <property name="geometry">
+              <rect>
+               <x>-50</x>
+               <y>20</y>
+               <width>131</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="mouseTracking">
+              <bool>false</bool>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="text">
+              <string> Plot</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="data_format">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>20</y>
+               <width>51</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="mouseTracking">
+              <bool>false</bool>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="text">
+              <string>Data</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="csv">
+             <property name="geometry">
+              <rect>
+               <x>170</x>
+               <y>10</y>
+               <width>82</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>.cvs</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="npy">
+             <property name="geometry">
+              <rect>
+               <x>170</x>
+               <y>30</y>
+               <width>82</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>.npy</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="name_box_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>20</y>
+              <width>301</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(240, 240, 240);</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QLabel" name="label_29">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>121</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Project Name...</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="project_name">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>30</y>
+               <width>281</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <italic>true</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Project</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="folder_box">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>341</width>
+             <height>241</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>Create Folder and add Work Path</string>
+           </property>
+           <widget class="QTextBrowser" name="path_text">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>301</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgba(255, 0, 0, 120);
+background-color: rgba(0, 0, 255, 50);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_27">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>81</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Work Path ...</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="path_button">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>301</width>
+              <height>28</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(225, 225, 225);</string>
+            </property>
+            <property name="text">
+             <string>Add path ...</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="verification_folder">
+            <property name="geometry">
+             <rect>
+              <x>320</x>
+              <y>0</y>
+              <width>20</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QGroupBox" name="name_box">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>120</y>
+              <width>301</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(240, 240, 240);</string>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QToolButton" name="open_folder">
+             <property name="geometry">
+              <rect>
+               <x>250</x>
+               <y>60</y>
+               <width>41</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(225, 225, 225);</string>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_28">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>121</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Insert Folder Name...</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="createfolder_button">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>60</y>
+               <width>231</width>
+               <height>28</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(225, 225, 225);</string>
+             </property>
+             <property name="text">
+              <string>Create Folder</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="folder_name">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>30</y>
+               <width>281</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <weight>50</weight>
+               <italic>true</italic>
+               <bold>false</bold>
+               <underline>false</underline>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>470</y>
+             <width>241</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_10">
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>1211</width>
+            <height>631</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="MplWidget" name="mpl_4" native="true">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>0</y>
+             <width>901</width>
+             <height>481</height>
+            </rect>
+           </property>
+           <property name="cursor">
+            <cursorShape>CrossCursor</cursorShape>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="geometry">
+            <rect>
+             <x>540</x>
+             <y>590</y>
+             <width>181</width>
+             <height>28</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 0, 0, 100);</string>
+           </property>
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>470</y>
+             <width>321</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Strain Gauge Position</string>
+           </property>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>30</y>
+              <width>101</width>
+              <height>61</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(225, 225, 225);</string>
+            </property>
+            <property name="text">
+             <string>Get position...</string>
+            </property>
+            <property name="shortcut">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_13">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>10</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Coordinate [px]</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QTextBrowser" name="coordinate_text">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>30</y>
+              <width>121</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgba(0, 0, 255, 50);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+           </widget>
+           <widget class="QTextBrowser" name="temperature_text">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>70</y>
+              <width>121</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgba(0, 0, 255, 50);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="acceptRichText">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_26">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>50</y>
+              <width>141</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Mean Temperature [°C]</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="verification_position">
+            <property name="geometry">
+             <rect>
+              <x>280</x>
+              <y>0</y>
+              <width>20</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <widget class="MplWidget" name="mpl_3" native="true">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>20</y>
+          <width>1151</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>CrossCursor</cursorShape>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_11">
+       <widget class="MplWidget" name="mpl_7" native="true">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>40</y>
+          <width>691</width>
+          <height>581</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>CrossCursor</cursorShape>
+        </property>
+        <widget class="QSlider" name="slider_plot">
+         <property name="geometry">
+          <rect>
+           <x>660</x>
+           <y>60</y>
+           <width>22</width>
+           <height>441</height>
+          </rect>
+         </property>
+         <property name="pageStep">
+          <number>1</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="invertedAppearance">
+          <bool>true</bool>
+         </property>
+         <property name="tickPosition">
+          <enum>QSlider::TicksBelow</enum>
+         </property>
+         <property name="tickInterval">
+          <number>50</number>
+         </property>
+        </widget>
+        <widget class="QLCDNumber" name="frame_start_2">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>40</y>
+           <width>64</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(149, 149, 149, 200);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="digitCount">
+          <number>5</number>
+         </property>
+         <property name="value" stdset="0">
+          <double>0.000000000000000</double>
+         </property>
+        </widget>
+        <widget class="QLCDNumber" name="frame_end_2">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>40</y>
+           <width>64</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(149, 149, 149, 200);
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="value" stdset="0">
+          <double>100.000000000000000</double>
+         </property>
+        </widget>
+        <widget class="QCheckBox" name="legend_plot">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>10</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="text">
+          <string>Enable Legend</string>
+         </property>
+         <property name="shortcut">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="MplWidget" name="mpl_8" native="true">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>571</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>CrossCursor</cursorShape>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_11">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>571</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="title">
+         <string>Parameters</string>
+        </property>
+        <widget class="QPushButton" name="search_frequency_2">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>30</y>
+           <width>101</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Plot...</string>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="num_sample_2">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>40</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>2</number>
+         </property>
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="singleStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_40">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>20</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>n°  Sample to plot</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QSpinBox" name="start_frame_2">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>40</y>
+           <width>51</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="singleStep">
+          <number>10</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_41">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>20</y>
+           <width>151</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Starting Frame</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_10">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>25</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QRadioButton" name="button_point">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>82</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Point</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="button_line">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>10</y>
+            <width>82</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Line</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="button_area">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>10</y>
+            <width>82</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Area</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="Line" name="line_4">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>75</y>
+           <width>531</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="results_box">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>90</y>
+           <width>531</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="title">
+          <string>Results</string>
+         </property>
+         <widget class="QLineEdit" name="info_mean">
+          <property name="geometry">
+           <rect>
+            <x>119</x>
+            <y>12</y>
+            <width>71</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(0,255, 255, 50);</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="info_max">
+          <property name="geometry">
+           <rect>
+            <x>259</x>
+            <y>14</y>
+            <width>71</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(0,255, 255, 50);</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="info_min">
+          <property name="geometry">
+           <rect>
+            <x>399</x>
+            <y>14</y>
+            <width>71</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(0,255, 255, 50);</string>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>339</x>
+            <y>18</y>
+            <width>47</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Min</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_37">
+          <property name="geometry">
+           <rect>
+            <x>199</x>
+            <y>18</y>
+            <width>47</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Max</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_38">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>18</y>
+            <width>47</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Mean</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="back_post">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>630</y>
+          <width>241</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 0, 0, 100);</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <zorder>mpl_8</zorder>
+       <zorder>mpl_7</zorder>
+       <zorder>groupBox_11</zorder>
+       <zorder>back_post</zorder>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="filter_2">
+      <property name="geometry">
+       <rect>
+        <x>1140</x>
+        <y>65</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>false</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(170, 255, 0, 150);</string>
+      </property>
+      <property name="text">
+       <string>Calibration: OFF</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>690</y>
+        <width>341</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Export/Save Data</string>
+      </property>
+      <property name="default">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="temporal_box">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>580</y>
+        <width>341</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Temporal Plot</string>
+      </property>
+      <widget class="QPushButton" name="temp_plot">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>321</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <italic>true</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>temporal plot...</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>60</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QSlider" name="slider_graph">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>10</y>
+         <width>160</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>1</number>
+       </property>
+       <property name="pageStep">
+        <number>1</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>MAG</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>10</y>
+         <width>31</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PHA</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="banner">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>-40</y>
+      <width>1435</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/Banner/banner3.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="date">
+    <property name="geometry">
+     <rect>
+      <x>1470</x>
+      <y>920</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="version">
+    <property name="geometry">
+     <rect>
+      <x>1620</x>
+      <y>920</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="info_path">
+    <property name="geometry">
+     <rect>
+      <x>1159</x>
+      <y>920</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0,0, 255, 50);</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="info_video">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>920</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0,0, 255, 50);</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>900</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Video Path</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>900</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Work Path</string>
+    </property>
+   </widget>
+   <zorder>banner</zorder>
+   <zorder>tabWidget</zorder>
+   <zorder>date</zorder>
+   <zorder>version</zorder>
+   <zorder>info_path</zorder>
+   <zorder>info_video</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1700</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actioncredit"/>
+    <addaction name="separator"/>
+    <addaction name="actionversion"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionclose"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="actionFlex">
+   <property name="text">
+    <string>Flex</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>Save...</string>
+   </property>
+  </action>
+  <action name="actionrestart">
+   <property name="text">
+    <string>Restart</string>
+   </property>
+  </action>
+  <action name="actionclose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actioncredit">
+   <property name="text">
+    <string>Credit</string>
+   </property>
+  </action>
+  <action name="actionversion">
+   <property name="text">
+    <string>Version</string>
+   </property>
+  </action>
+  <action name="actionRestart">
+   <property name="text">
+    <string>Restart</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">mplwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>crop_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>crop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>719</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>129</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>enable_ROI</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ROI()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>623</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>114</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lockin_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lockIn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>842</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>57</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>set_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setParam()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>313</x>
+     <y>494</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>11</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resume</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>resume()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>785</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>median_filter</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>disableProgress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>223</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>accept</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>224</x>
+     <y>785</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>60</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>resumeLock()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>86</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>92</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resume</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>cropDisabled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>776</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>11</x>
+     <y>732</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filterLock</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>filterLock()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>35</x>
+     <y>54</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>open_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>importVideo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>463</x>
+     <y>793</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filterLock_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>calibration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>545</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>11</x>
+     <y>619</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>enable_filter</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enableGaussian()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>329</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>16</x>
+     <y>95</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>enable_ROI</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>cropEnabled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>621</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>10</x>
+     <y>567</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>select_calibration</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>stacked_calibration</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>543</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>643</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gauge_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>gaugePosition()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>149</x>
+     <y>673</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>682</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>save</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>goSave()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>895</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>948</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cal_save</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>applyCalibration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>286</x>
+     <y>545</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>763</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>path_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>addPath()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>626</x>
+     <y>468</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>542</x>
+     <y>945</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>createfolder_button</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>createFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>572</x>
+     <y>630</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>606</x>
+     <y>956</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>open_folder</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>openFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>618</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>712</x>
+     <y>950</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>679</x>
+     <y>824</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>832</x>
+     <y>944</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>data_format</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>disableData()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>575</x>
+     <y>803</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>306</x>
+     <y>955</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>getGaugePosition()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>921</x>
+     <y>823</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>843</x>
+     <y>964</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>returnPost()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>516</x>
+     <y>881</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>379</x>
+     <y>940</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>returnPost()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>961</x>
+     <y>880</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>576</x>
+     <y>972</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_graph</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>switchGraph()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>976</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_frame</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>changeFrame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>890</x>
+     <y>872</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>690</x>
+     <y>960</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_frame</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>lcd</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1161</x>
+     <y>872</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1256</x>
+     <y>879</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>back_import</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>returnImport()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>964</x>
+     <y>870</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>632</x>
+     <y>929</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>search_frequency</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>searchFrequency()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>962</x>
+     <y>-5</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sampling_freq</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enableFreq()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>464</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>10</x>
+     <y>422</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>load_freq</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enableFreq()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>502</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>12</x>
+     <y>469</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>auto_freq</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>autoDetect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>8</x>
+     <y>519</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_freq</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>rescaleFreq()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1648</x>
+     <y>686</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1677</x>
+     <y>44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_freq</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>start_frame</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1644</x>
+     <y>680</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>612</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>start_frame</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>slider_freq</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>632</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1641</x>
+     <y>646</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_line</sender>
+   <signal>pressed()</signal>
+   <receiver>button_point</receiver>
+   <slot>toggle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>455</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_point</sender>
+   <signal>pressed()</signal>
+   <receiver>button_line</receiver>
+   <slot>toggle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>513</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_point</sender>
+   <signal>pressed()</signal>
+   <receiver>button_area</receiver>
+   <slot>toggle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>457</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>561</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>back_post</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>returnPost()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1084</x>
+     <y>885</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1545</x>
+     <y>971</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>temp_plot</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>goTemporal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>213</x>
+     <y>770</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>44</x>
+     <y>947</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>search_frequency_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>temporalPlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>952</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>741</x>
+     <y>976</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_point</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enablePoint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>452</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>10</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_line</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enableLine()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>506</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>10</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_area</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>enableArea()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>567</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>11</x>
+     <y>267</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_plot</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>rescaleTemp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1639</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1630</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_plot</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>search_frequency_2</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1641</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>922</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>start_frame_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>slider_plot</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>676</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1639</x>
+     <y>738</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_plot</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>start_frame_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1637</x>
+     <y>715</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>659</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>num_sample_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>search_frequency_2</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>782</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>893</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>num_sample</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>search_frequency</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>742</x>
+     <y>223</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>684</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>slider_freq</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>search_frequency</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1641</x>
+     <y>369</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>769</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>min_freq</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>search_frequency</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>452</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>max_freq</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>search_frequency</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>548</x>
+     <y>223</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>542</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>legend_plot</sender>
+   <signal>clicked()</signal>
+   <receiver>search_frequency_2</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1464</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>892</x>
+     <y>309</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>refresh</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>changeLimit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1141</x>
+     <y>851</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1201</x>
+     <y>976</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>refresh_resume</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>resumeLock()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1271</x>
+     <y>864</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>835</x>
+     <y>922</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>addPath()</slot>
+  <slot>createFolder()</slot>
+  <slot>importVideo()</slot>
+  <slot>extractFrame()</slot>
+  <slot>openFolder()</slot>
+  <slot>lockIn()</slot>
+  <slot>setParam()</slot>
+  <slot>plot()</slot>
+  <slot>ROI()</slot>
+  <slot>resume()</slot>
+  <slot>accept()</slot>
+  <slot>filterLock()</slot>
+  <slot>resumeLock()</slot>
+  <slot>saveFilter()</slot>
+  <slot>save()</slot>
+  <slot>clearParam()</slot>
+  <slot>enableGaussian()</slot>
+  <slot>cropEnabled()</slot>
+  <slot>cropDisabled()</slot>
+  <slot>waitLockin()</slot>
+  <slot>disable_progress()</slot>
+  <slot>disableProgress()</slot>
+  <slot>disableData()</slot>
+  <slot>restart()</slot>
+  <slot>calibration()</slot>
+  <slot>gaugePosition()</slot>
+  <slot>returnPost()</slot>
+  <slot>changeFrame()</slot>
+  <slot>getGaugePosition()</slot>
+  <slot>goSave()</slot>
+  <slot>applyCalibration()</slot>
+  <slot>closeSave()</slot>
+  <slot>switchGraph()</slot>
+  <slot>autoDetect()</slot>
+  <slot>returnImport()</slot>
+  <slot>searchFrequency()</slot>
+  <slot>enableFreq()</slot>
+  <slot>rescaleFreq()</slot>
+  <slot>goTemporal()</slot>
+  <slot>temporalPlot()</slot>
+  <slot>enablePoint()</slot>
+  <slot>enableLine()</slot>
+  <slot>enableArea()</slot>
+  <slot>rescaleTemp()</slot>
+  <slot>changeLimit()</slot>
+ </slots>
+</ui>
